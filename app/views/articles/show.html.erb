@@ -1,4 +1,5 @@
 <h1>Showing Articles Details</h1>
+<p><strong>By:</strong><%= @article.user.username %></p>
 <p><strong>Title:</strong><%= @article.title%></p>
 <p><strong>Description:</strong><%= @article.description%></p>
 <%= link_to 'Delete', article_path(@article), data: { turbo_method: :delete, confirm: 'Are you sure?' } %> |
